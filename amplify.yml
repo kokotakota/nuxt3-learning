@@ -8,7 +8,8 @@ frontend:
       commands:
         - yarn generate
   artifacts:
-    baseDirectory: dist
+    # distだとCI/CD時にエラーになるためdist/にする
+    baseDirectory: dist/
     files:
       - '**/*'
   cache:
