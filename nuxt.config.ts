@@ -3,7 +3,8 @@ export default defineNuxtConfig ({
   srcDir: 'src/',
   css: [
     'vuetify/lib/styles/main.sass',
-    'mdi/css/materialdesignicons.min.css' // Vuetifyアイコン用
+    'mdi/css/materialdesignicons.min.css', // Vuetifyアイコン用
+    '@mdi/font/css/materialdesignicons.css' // Vuetifyアイコン用
   ],
   build: {
     transpile: ['vuetify'],
