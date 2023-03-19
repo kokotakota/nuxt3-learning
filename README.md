@@ -85,6 +85,7 @@ utils
 ## Vuetify導入
 ```
 yarn add vuetify@next mdi
+yarn add -D @mdi/font
 yarn add -D sass
 ```
 ※mdiはアイコンを使用する場合に必要
@@ -107,7 +108,8 @@ nuxt.config.ts
 export default defineNuxtConfig ({
   css: [
     'vuetify/lib/styles/main.sass',
-    'mdi/css/materialdesignicons.min.css' // Vuetifyアイコン用
+    'mdi/css/materialdesignicons.min.css', // Vuetifyアイコン用
+    '@mdi/font/css/materialdesignicons.css' // Vuetifyアイコン用
   ],
   build: {
     transpile: ['vuetify'],
